@@ -1,0 +1,9 @@
+Host:ec2-75-101-133-29.compute-1.amazonaws.com
+
+Database:d5pkpvitslg453
+
+User¡Gxbxbmmpqeyooks
+
+Password¡Ga007d9568d9e2cf776bd60767287047863a70b21b7d1c53fa0cc945ce4221b3b
+
+URI¡Gpostgres://xbxbmmpqeyooks:a007d9568d9e2cf776bd60767287047863a70b21b7d1c53fa0cc945ce4221b3b@ec2-75-101-133-29.compute-1.amazonaws.com:5432/d5pkpvitslg453
