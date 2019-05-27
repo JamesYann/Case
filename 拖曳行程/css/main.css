@@ -1,0 +1,12 @@
+  li {
+    list-style-type: none;
+    font-size: 1.4em;
+    list-style-image: none;
+    margin: 10px;
+    margin-right: 10%;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 4px;
+    color: #666;
+    cursor: move;
+  }
