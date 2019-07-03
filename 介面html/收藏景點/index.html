@@ -14,62 +14,70 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        body {
+            font-family: 微軟正黑體, "Times New Roman",
+                Times, serif;
+            color:#4D3900;
+            background-color: #feffcc }
+    </style>
+    
 </head>
 
 <body>
     <div class="container mt-3">
-        
-            <div class="jumbotron jumbotron-fluid border-warning">
-                    <div class="container text-center ">
-                      <h1 class="display-7">我的收藏</h1>
-                    </div>
-            </div>
+
+        <div class="alert alert-success" role="alert" style="margin-bottom: 2rem">
+            <h1 class="alert-heading text-center" >我的收藏</h1>
+            <p Align="Center">可以將心動的景點加入到這次旅遊中喲!</p>
+            
+        </div>
 
         <div class="row">
             
             <!-- 卡片一 -->
             <div class="col-12">
-                <div class="card border-warning" style="margin-bottom: 1rem;">
+                <div class="card bg-warning" style="margin-bottom: 1.5rem; font-size:1.5em">
                     <div class="card-body">
-                        阿發哥果園
+                        <strong>阿發哥果園</strong>
                         <button type="button" class="btn btn-danger float-right">X</button>
                     </div>
-                <button type="button" class="btn btn-outline-info">加入行程</button>
-
+                    <button type="button" class="btn btn-success">加入行程</button>
                 </div>
             </div>
             
             <!-- 卡片二 -->
             <div class="col-12">
-                <div class="card border-warning" style="margin-bottom: 1rem;">
+                <div class="card bg-warning" style="margin-bottom: 1.5rem; font-size:1.5em">
                     <div class="card-body">
-                        台北101
+                        <strong>台北101</strong>
                         <button type="button" class="btn btn-danger float-right">X</button>
                     </div>
-                <button type="button" class="btn btn-outline-info">加入行程</button>
-
+                    <button type="button" class="btn btn-success">加入行程</button>
                 </div>
             </div>
 
             <!-- 卡片三 -->
             <div class="col-12">
-                <div class="card border-warning" style="margin-bottom: 1rem;">
+                <div class="card bg-warning" style="margin-bottom:1.5rem; font-size:1.5em">
                     <div class="card-body">
-                        大湖草莓園大湖草莓園
+                        <strong>大湖草莓園</strong>
                         <button type="button" class="btn btn-danger float-right">X</button>
                     </div>
-                <button type="button" class="btn btn-outline-info">加入行程</button>
-
+                    <button type="button" class="btn btn-success">加入行程</button>
                 </div>
             </div>
 
         </div>
 
+        <div class="text-right" >
+            <button type="submit" class="btn btn-success float-right" style="margin-top: 2rem; margin-bottom: 1rem">存檔</button>
         </div>
 
-        <div class="text-right">
-            <button type="submit" class="btn btn-outline-success">存檔</button>
         </div>
+
+      
     </div>
 </body>
 

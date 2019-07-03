@@ -14,78 +14,85 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        body {
+            font-family: 微軟正黑體, "Times New Roman",
+                Times, serif;
+            color:#4D3900;
+            background-color: #feffcc }
+    </style>
+
 </head>
 
 <body>
     <div class="container mt-3">
 
-        <div class="jumbotron jumbotron-fluid border-warning">
-                <div class="container text-center ">
-                    <h1 class="display-7">我的行程</h1>
-                </div>
-        </div>
+        <div class="alert alert-success" role="alert"  style="margin-bottom: 2rem">
+            <h1 class="alert-heading text-center" >我的行程</h1>
+            <p Align="Center">規劃一次難忘的旅遊</p>
+            
+          </div>
 
         <div class="row">
             <!-- 卡片一 -->
+         
             <div class="col-12">
-                <div class="card text-center border-warning" style="margin-bottom: 1rem;">
-                    <div class="card-header">
-                      景點一
-                      <button type="button" class="btn btn-danger float-right">X</button>
+                <div class="card bg-warning text-center" style="margin-bottom: 1.5rem;">
+                    <div class="card-header" style="font-size: 1.7rem">
+                        <strong>景點一</strong>
+                        <button type="button" class="btn btn-danger float-right">X</button>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">巧克力共和國</h5>
+
+                    <div class="card-body" style="font-size: 1.5rem">
+                            <div class="card-title"><strong>巧克力共和國</strong></div>
                     </div>
-                    <div class="card-body">
-                        <footer class="blockquote-footer">
-                            5 hours ago
-                        </footer>
+                    <div class="card-footer bg-light" style="font-size: 1rem">
+                            <strong>5 hours</strong> 
                     </div>
                 </div>
             </div>
+
             
             <!-- 卡片二 -->
             <div class="col-12">
-                <div class="card text-center border-warning" style="margin-bottom: 1rem;">
-                    <div class="card-header">
-                      景點二
-                      <button type="button" class="btn btn-danger float-right">X</button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">阿發哥果園</h5>
-                    </div>
-                    <div class="card-body">
-                        <footer class="blockquote-footer">
-                            2 hours ago
-                        </footer>
+                    <div class="card bg-warning text-center" style="margin-bottom: 1.5rem;">
+                        <div class="card-header" style="font-size: 1.7rem">
+                            <strong>景點二</strong>
+                            <button type="button" class="btn btn-danger float-right">X</button>
+                        </div>
+    
+                        <div class="card-body" style="font-size: 1.5rem">
+                                <div class="card-title"><strong>阿發哥果園</strong></div>
+                        </div>
+                        <div class="card-footer bg-light" style="font-size: 1rem">
+                                <strong>3 hours</strong> 
+                        </div>
                     </div>
                 </div>
-            </div>
             
             <!-- 卡片三 -->
             <div class="col-12">
-                <div class="card text-center border-warning" style="margin-bottom: 1rem;">
-                    <div class="card-header">
-                      景點三
-                      <button type="button" class="btn btn-danger float-right">X</button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">大湖草莓園</h5>
-                    </div>
-                    <div class="card-body">
-                        <footer class="blockquote-footer">
-                            1.5 hours ago
-                        </footer>
+                    <div class="card bg-warning text-center" style="margin-bottom: 1.5rem;">
+                        <div class="card-header" style="font-size: 1.7rem">
+                            <strong>景點三</strong>
+                            <button type="button" class="btn btn-danger float-right">X</button>
+                        </div>
+    
+                        <div class="card-body" style="font-size: 1.5rem">
+                                <div class="card-title"><strong>海產晚餐</strong></div>
+                        </div>
+                        <div class="card-footer bg-light" style="font-size: 1rem">
+                                <strong>2 hours</strong> 
+                        </div>
                     </div>
                 </div>
-            </div>
-
         </div>
 
-        <div class="text-center">
-            <button type="submit" class="btn btn-outline-success">存檔</button>
-            <button type="submit" class="btn btn-outline-primary">輸出</button>
-            <button type="submit" class="btn btn-outline-warning">推薦路徑</button>
+        <div class="text-center" style="margin-top: 2rem;margin-bottom: 1rem">
+            <button type="submit" class="btn btn-success">推薦路徑</button>
+            <button type="submit" class="btn btn-primary">輸出</button>
+            <button type="submit" class="btn btn-success">储存</button>
         </div>
     </div>
 </body>
