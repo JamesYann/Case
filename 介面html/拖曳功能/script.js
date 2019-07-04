@@ -1,4 +1,5 @@
-let items = document.querySelectorAll('#items-list > li')
+
+let items = document.querySelectorAll('#items-list > .col-12')
 
 items.forEach(item => {
   $(item).prop('draggable', true)

@@ -5,39 +5,18 @@
   -ms-user-select: none;
 }
 
-ul.moveable {
-  list-style: none;
+
+div.row {
   margin: 0px;
 }
-ul.moveable li {
-  list-style-image: none;
-  margin: 10px;
+.col-12 {
+  margin: auto;
   border: 1px solid #ccc;
-  padding: 4px;
+  padding: 1rem;
   border-radius: 4px;
-  color: #666;
   cursor: move;
+  margin-top: 1rem;
 }
-ul.moveable li:hover {
-  background-color: #eee;
-}
-
-
-
-
-ul.card-group {
-  list-style: none;
-  margin: 0px;
-}
-ul.card-group li {
-  list-style-image: none;
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 4px;
-  border-radius: 4px;
-  color: #666;
-  cursor: move;
-}
-ul.card-group li:hover {
+.col-12:hover {
   background-color: #eee;
 }
