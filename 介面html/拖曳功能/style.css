@@ -1,0 +1,22 @@
+[draggable="true"] {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+div.row {
+  margin: 0px;
+}
+.col-12 {
+  margin: auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: move;
+  margin-top: 1rem;
+}
+.col-12:hover {
+  background-color: #eee;
+}
