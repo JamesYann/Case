@@ -16,6 +16,9 @@ app.post('/dialogflow', express.json(), (req, res) => {
     //------------------------------------     
     function welcome(){
         agent.add('歡迎你!!!');
+        agent.add('傳入參數:'+req.body.queryResult.parameters);
+        agent.add('使用者的LineId:'+req.body.originalDetectIntentRequest.payload.data.source.userId);
+        agent.add('timestamp:'+req.body.originalDetectIntentRequest.payload.data.timestamp);
     }
 
     //------------------------------------
