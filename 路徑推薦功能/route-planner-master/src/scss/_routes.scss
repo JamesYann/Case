@@ -1,0 +1,14 @@
+.routes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0 0 5px #3d3d3d;
+}
+
+@media screen and (min-width: 600px) {
+  .routes {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+    margin: 100px 10%;
+  }
+}

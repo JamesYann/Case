@@ -1,0 +1,58 @@
+@import "variables";
+
+.route-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  height: 130px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-weight: 300;
+
+  h2 {
+    font-size: .6rem;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    margin-bottom: 10px;
+  }
+
+  .route-visual {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .textual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .value {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+
+  .unit {
+    font-size: .9rem;
+    text-transform: lowercase;
+    letter-spacing: 1pt;
+  }
+
+  .distance {
+    text-align: center;
+    color: #249991;
+  }
+
+  .duration {
+    text-align: center;
+    color: #953163;
+    li {
+      display: inline-block;
+      margin-right: 2* $pad;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

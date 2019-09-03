@@ -1,0 +1,9 @@
+node_modules/**
+resources/*.html
+resources/js/*.*
+resources/css/*.css
+resources/css/*.css.map
+*.iml
+.sass-cache/**
+.idea
+bash.exe.stackdump
