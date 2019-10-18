@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<title>我的行程</title>
+<!-- 連結思源中文及css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+<script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+<script src="../../js/jquery.ui.touch-punch.js"></script>
+<script src="../../js/main.js"></script>
+
+<style type="text/css">
+    body {
+        font-family: 微軟正黑體, "Times New Roman",
+            Times, serif;
+        color:#4D3900;
+        background-color: #feffcc }
+</style>  
+<!------------------------->
+</head>
+   
+<body>
+    <div class="container mt-3">
+
+        <div class="alert alert-success" role="alert"  style="margin-bottom: 2rem">
+            <h1 class="alert-heading text-center" >行程安排</h1>
+            <p Align="Center">規劃一次難忘的旅遊</p>    
+        </div>
+
+
+        <div class="row">
+                <!-- 卡片一 -->
+             
+                <div class="col-12" id="sortable">
+                    <% for(var i=0; i<items.length; i++) {%>
+
+                    <div class="card bg-warning text-center" style="margin-bottom: 1.5rem;" id="<%=items[i].place_id %>" >
+                        <div class="card-header" style="font-size: 1.7rem"   >
+                            <strong>景點<%=[i+1]%></strong>
+                            <button type="button" class="btn btn-danger float-right" id="<%=items[i].place_id %>button">X</button>
+                        </div>
+        
+                        <div class="card-body" style="font-size: 1.5rem">
+                                <div class="card-title"><strong> <h6><%= items[i].place_name %></h6> </strong></div>       
+                        </div>
+                        
+                    </div>
+        
+                    <% } %>
+                </div>
+        
+            </div>
+
+            <div id="showHeaderText">
+
+            </div>
+
+        
+        
+            <div class="text-center" style="margin-top: 2rem;margin-bottom: 1rem">
+                <button type="submit" class="btn btn-success">推薦路徑</button>
+                <button type="submit" class="btn btn-primary">輸出</button>
+                <button type="submit" class="btn btn-success">儲存</button>
+            </div>
+        
+          </div>
+          
+         
+</body>
+</html>
