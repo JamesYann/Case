@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script>var map, marker, lat, lng;</script>
+<title>我的行程</title>
+<!-- 連結思源中文及css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script language="JavaScript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+<script src="../../js/jquery.ui.touch-punch.js"></script>
+<script src="../../js/main.js"></script>
+
+<script type="text/javascript">
+    
+    function initMap() {
+        navigator.geolocation.watchPosition((position) => {
+            console.log(position.coords);
+            lat = position.coords.latitude;
+            lng = position.coords.longitude;
+            // 初始化地圖
+            // map = new google.maps.Map(document.getElementById('map'), {
+            //     zoom: 18,
+            //     center: { lat: lat, lng: lng }
+            // });
+            // marker = new google.maps.Marker({
+            //     position: { lat: lat, lng: lng },
+            //     map: map
+            // });
+        });
+    } 
+</script>
+
+<style type="text/css">
+    body {
+        font-family: 微軟正黑體, "Times New Roman",
+            Times, serif;
+        color:#4D3900;
+        background-color: #fffaec ;
+        
+        }
+
+        a {
+            text-decoration:none;
+            color: #4D3900;
+        }
+
+        .c{
+            position:relative;
+            /* z-index:99; */
+
+        }
+
+        
+</style> 
+<!------------------------->
+</head>
+   
+<body>
+    <div class="container mt-3">
+
+        <div class="alert alert-warning" role="alert"  style="margin-bottom: 2rem">
+            <h1 class="alert-heading text-center" >行程安排</h1>
+            <p Align="Center">規劃一次難忘的旅遊</p>    
+        </div>
+
+       
+
+
+        <div class="row">
+                <!-- 卡片一 -->
+             
+                <div class="col-12" id="sortable">
+                    <% for(var i=0; i<items.length; i++) {%>
+
+                    <div class="card border-warning mb-3 bg-transparent border-warning text-center" style="margin-bottom: 1.6rem;" id="<%=items[i].place_id %>" >
+                        <div class="card-header bg-transparent border-warning" style="font-size: 1.7rem"   >
+                            <strong>景點<%=[i+1]%></strong>
+                            <button type="button" class="btn btn-danger float-right" id="<%=items[i].place_id%>">X</button>
+                        </div>
+        
+                        <div class="card-body" style="font-size: 1.4rem">
+                                <div class="card-title"><strong><%= items[i].place_name %></strong></div>       
+                        </div>
+                        
+                    </div>
+        
+                    <% } %>
+                </div>
+        
+            </div>
+
+            <div id="showHeaderText">
+
+            </div>
+
+        
+            
+              
+            <div class="text-center" style="margin-top:1rem; margin-bottom: 1rem">
+
+                <div>
+                    <div id="circle" style="display: none; width: 100%;" class="c">
+                        <div  class="spinner-border text-warning" role="status"></div>                
+                    </div>
+
+                    <button type="button" class="btn btn-warning" id="<%=items[0].schedule_id %>" style="margin-top: 1rem;">推薦路徑</button>
+
+                </div>
+
+                   
+            </div>
+        
+          </div>
+          
+
+          
+          
+          
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2dazAHnsooxnM6akxlJcp_vq1klEDScE&callback=initMap">
+          </script>
+</body>
+</html>
