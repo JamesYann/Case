@@ -1,0 +1,10 @@
+var express = require('express');
+var router = express.Router();
+const product = require('./utility/product');
+
+//接收GET請求
+router.get('/', function(req, res, next) {
+    res.render('product_add_form'); 
+});
+
+module.exports = router; 
